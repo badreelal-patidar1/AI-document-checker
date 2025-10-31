@@ -1,0 +1,149 @@
+{
+  "info": {
+    "name": "assessment",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "analyze",
+      "event": [],
+      "request": {
+        "method": "POST",
+        "header": [],
+        "auth": {
+          "type": "noauth"
+        },
+        "description": "",
+        "url": {
+          "raw": "http://127.0.0.1:8000/analyze",
+          "protocol": "http",
+          "host": [
+            "127",
+            "0",
+            "0",
+            "1:8000"
+          ],
+          "path": [
+            "analyze"
+          ],
+          "query": [],
+          "variable": []
+        },
+        "body": {
+          "mode": "formdata",
+          "formdata": [
+            {
+              "key": "file",
+              "value": [
+                "C:\\Users\\jawa42\\Downloads\\grammar_errors_50.docx"
+              ],
+              "disabled": false,
+              "type": "default"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "name": "correct",
+      "event": [],
+      "request": {
+        "method": "POST",
+        "header": [],
+        "auth": {
+          "type": "noauth"
+        },
+        "description": "",
+        "url": {
+          "raw": "http://127.0.0.1:8000/correct",
+          "protocol": "http",
+          "host": [
+            "127",
+            "0",
+            "0",
+            "1:8000"
+          ],
+          "path": [
+            "correct"
+          ],
+          "query": [
+            {
+              "key": "output_format",
+              "value": "docx"
+            }
+          ],
+          "variable": []
+        },
+        "body": {
+          "mode": "formdata",
+          "formdata": [
+            {
+              "key": "file",
+              "value": [
+                "C:\\Users\\jawa42\\Downloads\\grammar_errors_50.docx"
+              ],
+              "disabled": false,
+              "type": "default"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "name": "download_corrected",
+      "event": [],
+      "request": {
+        "method": "GET",
+        "header": [],
+        "auth": {
+          "type": "noauth"
+        },
+        "description": "",
+        "url": {
+          "raw": "http://127.0.0.1:8000/download_corrected/file_name",
+          "protocol": "http",
+          "host": [
+            "127",
+            "0",
+            "0",
+            "1:8000"
+          ],
+          "path": [
+            "download_corrected",
+            "file_name"
+          ],
+          "query": [],
+          "variable": []
+        }
+      }
+    },
+    {
+      "name": "files-list",
+      "event": [],
+      "request": {
+        "method": "GET",
+        "header": [],
+        "auth": {
+          "type": "noauth"
+        },
+        "description": "",
+        "url": {
+          "raw": "http://127.0.0.1:8000/files",
+          "protocol": "http",
+          "host": [
+            "127",
+            "0",
+            "0",
+            "1:8000"
+          ],
+          "path": [
+            "files"
+          ],
+          "query": [],
+          "variable": []
+        }
+      }
+    }
+  ],
+  "variable": []
+}

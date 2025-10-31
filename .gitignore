@@ -1,0 +1,10 @@
+# Ignore virtual environment
+.venv
+# Ignore corrected files
+corrected_files/*
+# Ignore uploads
+uploads/*   
+# Ignore .env file
+.env
+__pycache__/*
+tests/__pycache__/*

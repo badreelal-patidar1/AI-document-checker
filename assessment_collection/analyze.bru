@@ -1,0 +1,20 @@
+meta {
+  name: analyze
+  type: http
+  seq: 1
+}
+
+post {
+  url: http://127.0.0.1:8000/analyze
+  body: multipartForm
+  auth: inherit
+}
+
+body:multipart-form {
+  file: @file(C:\Users\jawa42\Downloads\grammar_errors_50.docx)
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}
