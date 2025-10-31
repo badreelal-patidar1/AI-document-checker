@@ -123,9 +123,6 @@ class LLMAgent:
         nlp_info = await self.nlp_summary(text)
         chunks = await chunk_text(text, chunk_size=CHUNK_SIZE)
         combined_findings = {
-            "grammar_issues": [],
-            "clarity_issues": [],
-            "style_issues": [],
             "per_chunk_reports": [],
         }
 
